@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        
+       
+
+        h1 {
+            color: rgb(77, 67, 67);
+            box-shadow: 2px 2px 2px black;
+            margin: 100px;
+            background-color: rgb(51, 8, 14);
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1:hover {
+            background-color: rgb(255, 10, 10);
+            color: rgb(0, 0, 0);
+        
+        
+        }
+
+    
+
+    </style>
+
+</head>
+<body>
+    <h1>Tabela personalizada</h1>
+
+    <form action="cadrasto.php" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="\d{2}\d{4,5}-\d{4}$" required placeholder="xx x xxxx-xxxx">
+            </p>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="imas" checked> <br>
+            <label for="fen">Feminino</label>
+            <input type="radio" name="sexo" id="ifen"> <br>
+            
+
+        </fieldset>
+
+
+        </fieldset>
+<br>
+        <fieldset>
+            <label for="ifut">Futebol</label>
+            <input type="checkbox" name="fut" id="ifut" checked><br>
+
+            <label for="iten">Tênis</label>
+            <input type="checkbox" name="ten" id="iten"><br>
+
+            <label for="ihad">Hadball</label>
+            <input type="checkbox" name="had" id="ihad"><br>
+
+            <label for="ibas">Basquete</label>
+            <input type="checkbox" name="bas" id="ibas"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>outros</legend>
+            
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#dddddd"> <br>
+            <label for="iniv">Nivel de Satisfação</label>
+            <input type="range" name="niv" id="iniv"> <br>
+            <label for="ifot">Adicione sua foto</label>
+            <input type="file" name="fot" id="ifot"> <br>
+        </fieldset>
+        
+        
+
+<br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>
