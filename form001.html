@@ -94,14 +94,93 @@
             <input type="file" name="fot" id="ifot"> <br>
         </fieldset>
         
-        
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest" >
 
-<br>
+            <option value selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
 
-    </form>
-    
-</body>
-</html>
+            <optgroup label="Região Nordeste">
+                
+                <option value="PE">Pernambuco</option>
+                <option value="PB">Paraiba</option>
+                <option value="AL">Alagoas</option>
+            </optgroup>
+
+        </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="iprofs">
+            <datalist id="iprofs">
+                <option value="ADM">Administrador</option>
+
+            </datalist>
+
+        </p>
+
+        <p>
+<textarea  name="msg" id="img" cols="30" rows="10" >Digite sua msg: </textarea>
+
+        </p>
+
+        <p>
+            <label for="in1">Digite um número</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+           
+        </p>
+
+        <p>
+            <label for="in2">Digite outro número</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="inun">Número:</label>
+            <input type="range" name="nun" id="inun" min="0" max="10" value="5"
+            oninput="ival.innerHTML = Number(inun.value) ">
+            <output id="ival" >5</output>
+        </p>
+
+        <p>
+            <label for="inas"> Qual ano nasceu:</label>
+            <input type="number" name="nas" id="inas" min="1900" max="2022" required
+            oninput="ical.innerHTML = Number(iatu.value) - Number(inas.value)">
+        </p>
+            <p>
+                <label for="iatu"> Qual ano atual:</label>
+                <input type="number" name="atu" id="iatu" min="1900" max="2022" required
+                oninput="ical.innerHTML = Number(iatu.value) - Number(inas.value)">
+            </p>
+            <p>
+            <output id="ical">0000</output>
+
+        </p>
+            
+            
+            
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            
+                </form>
+                
+            </body>
+            </html>
+        </p>
